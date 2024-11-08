@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contactos</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Agregar Contactos</h2>
+            <form id="contactForm">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="E-mail">Correo</label>
+                <input type="text" id="email" name="E-mail" required>
+
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+
+        <div class="search-container">
+            <h2>Buscar Contactos</h2>
+            <select id="searchField">
+                <option value="nombre">Nombre</option>
+                <option value="apellido">Apellido</option>
+                <option value="email">E-mail</option>
+            </select>
+            <input type="text" id="searchQuery" placeholder="Buscar...">
+            <button id="searchBtn">Buscar</button>
+            <button id="viewAllBtn">Consultar Todo</button>
+            <button id="deleteBtn">Borrar</button>
+        </div>
+
+        <div id="contactList">
+            <h2>Lista de Contactos</h2>
+            <ul></ul>
+        </div>
+    </div>
+    <script src="ag.js"></script>
+</body>
+</html>
